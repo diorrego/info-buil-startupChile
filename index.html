@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build - Startup Chile</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #FFFFFF;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 1rem auto 0 auto;
+            width: 50rem;
+            padding: 1rem;
+        }
+
+        @media only screen and (max-width: 1000px) {
+            body {
+                width: 95%;
+            }
+
+            button {
+                width: 95%
+            }
+        }
+
+        h1,
+        h3 {
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+
+        .box {
+            background-color: #1F1F1F;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.20);
+        }
+
+        p,
+        a {
+            font-size: larger;
+            color: #FFFFFF;
+            margin: 1rem 1rem 1rem 1rem;
+        }
+
+        li {
+            font-size: larger;
+            color: #FFFFFF;
+            margin: 1rem 1rem 1rem 2rem;
+        }
+
+        #deploy0,
+        #deploy1,
+        #deploy2,
+        #deploy3,
+        #deploy4,
+        #deploy5,
+        #deploy6,
+        #deploy7,
+        #deploy8,
+        #deploy9,
+        #deploy10 {
+            display: none;
+        }
+
+        button {
+            width: 25rem;
+            height: 3rem;
+            color: #FFFFFF;
+            background-color: #616161;
+            display: block;
+            border-style: none;
+            border-radius: 10px;
+            margin: 1.5rem auto 1.5rem auto;
+            box-shadow: 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12), 0 7px 8px -4px rgba(0, 0, 0, 0.20);
+            font-size: large;
+            cursor: pointer;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a>stow SpA</a>
+    <div class="box">
+        <h1>Build - Startup Chile</h1>
+        <h3>Apuntes postulación</h3>
+        <p>Se buscan startups en etapa temprana (fase de idea o prototipo), de base tecnológica, con potencial global, y que tengan menos de un año de desarrollo.</p>
+    </div>
+
+    <button id="colorBoton0" onclick="deploy(0)">Objetivo general</button>
+    <div class="box" id="deploy0">
+        <p>Financiar:</p>
+        <li>Emprendimiento con visión global,</li>
+        <li>que fomente al emprendimiento femenino,</li>
+        <li>y que sea un negocio tecnológico.</li>
+    </div>
+
+    <button id="colorBoton1" onclick="deploy(1)">Objetivos específicos</button>
+    <div class="box" id="deploy1">
+        <p>En el emprendimiento:</p>
+        <li>Pre-acelerary obtener primeras ventas,</li>
+        <li>potenciar liderazgo y desarrollo de negocios,</li>
+        <li>y construir ecosistema i+e.</li>
+    </div>
+
+    <button id="colorBoton2" onclick="deploy(2)">Resultados esperados</button>
+    <div class="box" id="deploy2">
+        <p>En el emprendimiento:</p>
+        <li>Pasar de producto mínimo viable a producto validado,</li>
+        <li>certificaciones de liderazgo y/o hábilidades técnicas en desarrollo de negocio,</li>
+        <li>y levantar capital, generar nuevos clientes y/o socios.</li>
+    </div>
+
+    <button id="colorBoton3" onclick="deploy(3)">Participantes del proyecto</button>
+    <div class="box" id="deploy3">
+        <li>Beneficiario: persona jurídica con representante legal [persona natural] con un 100% del tiempo dedicado al proyecto,</li>
+        <li>y Patrocinador: intermediario entre beneficiario y Startup Chile [técnico y financiero].</li>
+    </div>
+
+    <button id="colorBoton4" onclick="deploy(4)">Actividades y gastos financiables</button>
+    <div class="box" id="deploy4">
+        <li>Empaquetamiento comercial,</li>
+        <li>plan comercial,</li>
+        <li>plan de negocio,</li>
+        <li>actividades de ventas,</li>
+        <li>activos críticos (a juicio de Corfo),</li>
+        <li>actividades que den como resultado un alto pontencial global con Chile como plataforma,</li>
+        <li>y pago por los servicios del patrocinador [obligatorio].</li>
+    </div>
+
+    <button id="colorBoton5" onclick="deploy(5)">Actividades del programa</button>
+    <div class="box" id="deploy5">
+        <li>Ejecutar el proyecto con Chile como plataforma (team working in Chile),</li>
+        <li>cumplir actividades críticas para lograr las metas del proyecto,</li>
+        <li>INTRO DAY, presentación del proyecto (en qué etapa se encuentra el negocio),</li>
+        <li>PITCH DAY, presentación del pitch,</li>
+        <li>ORIENTATION DAY, exponer del equipo y avances, y aprender a rendir cuentas del proyecto,</li>
+        <li>y otras actividades informadas por los dueños del programa [Startup Chile u Corfo].</li>
+    </div>
+
+    <button id="colorBoton6" onclick="deploy(6)">Contenido del proyecto</button>
+    <div class="box" id="deploy6">
+        <li>Antecedentes de los participantes (nacionalidad, educación, experiencia técnica y laboral) y fotocopia de la cédula de
+        identidad,</li>
+        <li>dedicación de los participantes del proyecto,</li>
+        <li>historial de liderazgo de la empresa,</li>
+        <li>antecedentes del equipo fundador,</li>
+        <li>contacto de a lo menos una persona que recomiende el proyecto,</li>
+        <li>el producto/servicio a desarrollar,</li>
+        <li>descripción de la competencia y diferenciación,</li>
+        <li>etapa de desarrollo del proyecto,</li>
+        <li>y vídeo máx. 90 segundos (descripción del equipo, problema y producto/servicio).</li>
+    </div>
+
+    <button id="colorBoton7" onclick="deploy(7)">Contenido optativo</button>
+    <div class="box" id="deploy7">
+        <li>Participantes: 
+            <li>motivación por hacer el proyecto en Chile,</li>
+            <li>participación en organizaciones relacionadas al emprendimientop e innovación,</li>
+            <li>relación con organizaciones internacionales,</li>
+            <li>y actividades para mejorar el emprendimiento e innovación local.</li>
+        </li>
+        <li>Proyecto: 
+            <li>Estrategia de comercialización,</li>
+            <li>barreras de entrada y salida,</li>
+            <li>progreso hasta la fecha y plan en Chile,</li>
+            <li>desafío de mercado que aborda el emprendimiento,</li>
+            <li>y posición en el mercado.</li>
+        </li>
+    </div>
+
+    <button id="colorBoton8" onclick="deploy(8)">Plazos</button>
+    <div class="box" id="deploy8">
+        <li>4 meses prorrogable 1 mes.</li>
+    </div>
+
+    <button id="colorBoton9" onclick="deploy(9)">Financiamiento</button>
+    <div class="box" id="deploy9">
+        <li>Proyecto: subsidio de 11,11 millones de pesos con una extensión de hasta 5 millones de pesos bajo modalidad empresa liderada por
+        mujeres, el subsidio (bajo mujer) es del 100% del proyecto.</li>
+        <li>Overhead [patrocinador]: hasta 2,5 millones de pesos y con extensión, hasta 1,5 millones de pesos, no más de 4 millones
+        de pesos en total.</li>
+    </div>
+
+    <button id="colorBoton10" onclick="deploy(10)">Criterios de evaluación</button>
+    <div class="box" id="deploy10">
+        <li>Participantes: competencias, liderazgo, logros demostrables, formación del equipo, y experiencia en la industria del
+        emprendimiento;</li>
+        <li>Valor del proyecto: producto/servicio, mercado y posición competitiva, y el impacto para Chile (mirada global en el
+        valor del proyecto).</li>
+    </div>
+
+    <a>Desarrollado por Diego Orrego para stow SpA</a>
+
+    <script>
+        var stateClick = new Array();
+        for(let i = 0; i<10; i++){
+          stateClick[i]=true;  
+        }
+        function deploy(i) {
+            if (stateClick[i] == true) {
+                document.getElementById('deploy' + i).style.display = "block";
+                document.getElementById('colorBoton' + i).style.backgroundColor = "#BB86FC";
+                document.getElementById('colorBoton' + i).style.color = "#000000";
+                stateClick[i] = false;
+            }
+            else if (stateClick[i] == false) {
+                document.getElementById('deploy' + i).style.display = "none";
+                document.getElementById('colorBoton' + i).style.backgroundColor = "#616161";
+                document.getElementById('colorBoton' + i).style.color = "#FFFFFF";
+                stateClick[i] = true;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
