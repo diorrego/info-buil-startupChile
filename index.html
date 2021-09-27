@@ -43,16 +43,21 @@
             box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.20);
         }
 
+        ul,
+        li,
         p,
         a {
             font-size: larger;
             color: #FFFFFF;
+        }
+
+        ul,
+        p,
+        a {
             margin: 1rem 1rem 1rem 1rem;
         }
 
         li {
-            font-size: larger;
-            color: #FFFFFF;
             margin: 1rem 1rem 1rem 2rem;
         }
 
@@ -93,7 +98,8 @@
     <div class="box">
         <h1>Build - Startup Chile</h1>
         <h3>Apuntes postulación</h3>
-        <p>Se buscan startups en etapa temprana (fase de idea o prototipo), de base tecnológica, con potencial global, y que tengan menos de un año de desarrollo.</p>
+        <p>Se buscan startups en etapa temprana (fase de idea o prototipo), de base tecnológica, con potencial global, y
+            que tengan menos de un año de desarrollo.</p>
     </div>
 
     <button id="colorBoton0" onclick="deploy(0)">Objetivo general</button>
@@ -122,7 +128,8 @@
 
     <button id="colorBoton3" onclick="deploy(3)">Participantes del proyecto</button>
     <div class="box" id="deploy3">
-        <li>Beneficiario: persona jurídica con representante legal [persona natural] con un 100% del tiempo dedicado al proyecto,</li>
+        <li>Beneficiario: persona jurídica con representante legal [persona natural] con un 100% del tiempo dedicado al
+            proyecto,</li>
         <li>y Patrocinador: intermediario entre beneficiario y Startup Chile [técnico y financiero].</li>
     </div>
 
@@ -149,8 +156,9 @@
 
     <button id="colorBoton6" onclick="deploy(6)">Contenido del proyecto</button>
     <div class="box" id="deploy6">
-        <li>Antecedentes de los participantes (nacionalidad, educación, experiencia técnica y laboral) y fotocopia de la cédula de
-        identidad,</li>
+        <li>Antecedentes de los participantes (nacionalidad, educación, experiencia técnica y laboral) y fotocopia de la
+            cédula de
+            identidad,</li>
         <li>dedicación de los participantes del proyecto,</li>
         <li>historial de liderazgo de la empresa,</li>
         <li>antecedentes del equipo fundador,</li>
@@ -163,19 +171,19 @@
 
     <button id="colorBoton7" onclick="deploy(7)">Contenido optativo</button>
     <div class="box" id="deploy7">
-        <li>Participantes: 
+        <ul>Participantes:
             <li>motivación por hacer el proyecto en Chile,</li>
             <li>participación en organizaciones relacionadas al emprendimientop e innovación,</li>
             <li>relación con organizaciones internacionales,</li>
             <li>y actividades para mejorar el emprendimiento e innovación local.</li>
-        </li>
-        <li>Proyecto: 
+        </ul>
+        <ul>Proyecto:
             <li>Estrategia de comercialización,</li>
             <li>barreras de entrada y salida,</li>
             <li>progreso hasta la fecha y plan en Chile,</li>
             <li>desafío de mercado que aborda el emprendimiento,</li>
             <li>y posición en el mercado.</li>
-        </li>
+        </ul>
     </div>
 
     <button id="colorBoton8" onclick="deploy(8)">Plazos</button>
@@ -185,26 +193,30 @@
 
     <button id="colorBoton9" onclick="deploy(9)">Financiamiento</button>
     <div class="box" id="deploy9">
-        <li>Proyecto: subsidio de 11,11 millones de pesos con una extensión de hasta 5 millones de pesos bajo modalidad empresa liderada por
-        mujeres, el subsidio (bajo mujer) es del 100% del proyecto.</li>
-        <li>Overhead [patrocinador]: hasta 2,5 millones de pesos y con extensión, hasta 1,5 millones de pesos, no más de 4 millones
-        de pesos en total.</li>
+        <li>Proyecto: subsidio de 11,11 millones de pesos con una extensión de hasta 5 millones de pesos bajo modalidad
+            empresa liderada por
+            mujeres, el subsidio (bajo mujer) es del 100% del proyecto.</li>
+        <li>Overhead [patrocinador]: hasta 2,5 millones de pesos y con extensión, hasta 1,5 millones de pesos, no más de
+            4 millones
+            de pesos en total.</li>
     </div>
 
     <button id="colorBoton10" onclick="deploy(10)">Criterios de evaluación</button>
     <div class="box" id="deploy10">
-        <li>Participantes: competencias, liderazgo, logros demostrables, formación del equipo, y experiencia en la industria del
-        emprendimiento;</li>
-        <li>Valor del proyecto: producto/servicio, mercado y posición competitiva, y el impacto para Chile (mirada global en el
-        valor del proyecto).</li>
+        <li>Participantes: competencias, liderazgo, logros demostrables, formación del equipo, y experiencia en la
+            industria del
+            emprendimiento;</li>
+        <li>Valor del proyecto: producto/servicio, mercado y posición competitiva, y el impacto para Chile (mirada
+            global en el
+            valor del proyecto).</li>
     </div>
 
     <a>Desarrollado por Diego Orrego para stow SpA</a>
 
     <script>
         var stateClick = new Array();
-        for(let i = 0; i<10; i++){
-          stateClick[i]=true;  
+        for (let i = 0; i < 11; i++) {
+            stateClick[i] = true;
         }
         function deploy(i) {
             if (stateClick[i] == true) {
